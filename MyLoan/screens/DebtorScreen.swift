@@ -26,7 +26,7 @@ struct DebtorScreen: View {
                         Text("Нет долгов !!!")
                             .font(.title)
                             .fontWeight(.bold)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("purple"))
                         Spacer()
                     }else{
                         ScrollView(.vertical, showsIndicators: false, content: {
@@ -56,6 +56,15 @@ struct DebtorScreen: View {
                                                 .shadow(color: Color(#colorLiteral(red: 0.2414824665, green: 0.273966521, blue: 0.5216231346, alpha: 0.2)), radius: 7, x: 0.0, y: 10.0)
                                                      , alignment: .center)
                                         .padding()
+                                    }
+                                    else{
+                                        
+                                            Text("Нет долгов !!!")
+                                                .font(.title)
+                                                .fontWeight(.bold)
+                                                .foregroundColor(Color("purple"))
+                                                .padding()
+                                        
                                     }
                                     
                                 }

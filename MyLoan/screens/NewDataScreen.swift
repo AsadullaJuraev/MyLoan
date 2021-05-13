@@ -62,7 +62,7 @@ struct NewDataScreen: View {
                                             .resizable()
                                             .padding(0)
                                             .frame(width: 14.0, height: 14.0)
-                                        Text(homeData.typeperson == homeData.typepersons[0] ? "Принятый !!!" : "Я отдал деньги !!!").padding(0)
+                                        Text(homeData.typeperson == homeData.typepersons[0] ? "Долг возвращен" : "Деньги отдано").padding(0)
                                     })
                                     .buttonStyle(PlainButtonStyle())
                                     .background(Color(red: 0, green: 0, blue: 0, opacity: 0.02))
