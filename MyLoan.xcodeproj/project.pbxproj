@@ -14,6 +14,13 @@
 		F397DCC9264CFEEB00220FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F397DCC8264CFEEB00220FEC /* Assets.xcassets */; };
 		F397DCCC264CFEEB00220FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F397DCCB264CFEEB00220FEC /* Preview Assets.xcassets */; };
 		F397DCCF264CFEEB00220FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F397DCCD264CFEEB00220FEC /* LaunchScreen.storyboard */; };
+		F397DCDA264CFF2F00220FEC /* ListDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCD7264CFF2E00220FEC /* ListDetailScreen.swift */; };
+		F397DCDB264CFF2F00220FEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCD8264CFF2E00220FEC /* HomeViewModel.swift */; };
+		F397DCDC264CFF2F00220FEC /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCD9264CFF2F00220FEC /* ListCell.swift */; };
+		F397DCE1264D004B00220FEC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCE0264D004B00220FEC /* HomeScreen.swift */; };
+		F397DCE3264D005C00220FEC /* Shareholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCE2264D005C00220FEC /* Shareholder.swift */; };
+		F397DCE5264D006500220FEC /* DebtorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCE4264D006500220FEC /* DebtorScreen.swift */; };
+		F397DCE7264D007300220FEC /* NewDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397DCE6264D007300220FEC /* NewDataScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		F397DCCB264CFEEB00220FEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F397DCCE264CFEEB00220FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F397DCD0264CFEEB00220FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F397DCD7264CFF2E00220FEC /* ListDetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailScreen.swift; sourceTree = "<group>"; };
+		F397DCD8264CFF2E00220FEC /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F397DCD9264CFF2F00220FEC /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		F397DCE0264D004B00220FEC /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F397DCE2264D005C00220FEC /* Shareholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shareholder.swift; sourceTree = "<group>"; };
+		F397DCE4264D006500220FEC /* DebtorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtorScreen.swift; sourceTree = "<group>"; };
+		F397DCE6264D007300220FEC /* NewDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +72,12 @@
 		F397DCBE264CFEE800220FEC /* MyLoan */ = {
 			isa = PBXGroup;
 			children = (
+				F397DCE8264D025E00220FEC /* apputils */,
+				F397DCDF264D002F00220FEC /* screens */,
+				F397DCD6264CFF1A00220FEC /* cells */,
 				F397DCBF264CFEE800220FEC /* AppDelegate.swift */,
 				F397DCC1264CFEE800220FEC /* SceneDelegate.swift */,
 				F397DCC3264CFEE800220FEC /* ContentView.swift */,
-				F397DCC8264CFEEB00220FEC /* Assets.xcassets */,
-				F397DCCD264CFEEB00220FEC /* LaunchScreen.storyboard */,
 				F397DCD0264CFEEB00220FEC /* Info.plist */,
 				F397DCC5264CFEE800220FEC /* MyLoan.xcdatamodeld */,
 				F397DCCA264CFEEB00220FEC /* Preview Content */,
@@ -76,6 +91,36 @@
 				F397DCCB264CFEEB00220FEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F397DCD6264CFF1A00220FEC /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F397DCD8264CFF2E00220FEC /* HomeViewModel.swift */,
+				F397DCD9264CFF2F00220FEC /* ListCell.swift */,
+				F397DCD7264CFF2E00220FEC /* ListDetailScreen.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		F397DCDF264D002F00220FEC /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				F397DCE0264D004B00220FEC /* HomeScreen.swift */,
+				F397DCE2264D005C00220FEC /* Shareholder.swift */,
+				F397DCE4264D006500220FEC /* DebtorScreen.swift */,
+				F397DCE6264D007300220FEC /* NewDataScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		F397DCE8264D025E00220FEC /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				F397DCC8264CFEEB00220FEC /* Assets.xcassets */,
+				F397DCCD264CFEEB00220FEC /* LaunchScreen.storyboard */,
+			);
+			path = apputils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +194,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F397DCC0264CFEE800220FEC /* AppDelegate.swift in Sources */,
+				F397DCE7264D007300220FEC /* NewDataScreen.swift in Sources */,
+				F397DCDB264CFF2F00220FEC /* HomeViewModel.swift in Sources */,
 				F397DCC2264CFEE800220FEC /* SceneDelegate.swift in Sources */,
+				F397DCDC264CFF2F00220FEC /* ListCell.swift in Sources */,
+				F397DCE1264D004B00220FEC /* HomeScreen.swift in Sources */,
+				F397DCE5264D006500220FEC /* DebtorScreen.swift in Sources */,
 				F397DCC4264CFEE800220FEC /* ContentView.swift in Sources */,
 				F397DCC7264CFEE800220FEC /* MyLoan.xcdatamodeld in Sources */,
+				F397DCE3264D005C00220FEC /* Shareholder.swift in Sources */,
+				F397DCDA264CFF2F00220FEC /* ListDetailScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
