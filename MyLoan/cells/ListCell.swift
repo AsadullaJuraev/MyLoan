@@ -22,15 +22,15 @@ struct ListCell: View {
                 }, label: {
                     Text(res.name ?? "")
                         .fontWeight(.bold)
-                        .foregroundColor(Color("font"))
+                        .foregroundColor(Color("black"))
                 }).sheet(isPresented: $isDetail, content: {
                     ListDetailScreen(item: res)
-                        .foregroundColor(Color("font"))
+                        .foregroundColor(Color("black"))
                 })
                 Spacer()
                 Text(res.sum ?? "")
                     .fontWeight(.bold)
-                    .foregroundColor(Color("font"))
+                    .foregroundColor(Color("black"))
                 
                 Text(res.typecurrency ?? "").fontWeight(.light)
                 
