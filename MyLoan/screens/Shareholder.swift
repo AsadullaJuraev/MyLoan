@@ -55,15 +55,6 @@ struct Shareholder: View {
                                                      , alignment: .center)
                                         .padding()
                                     }
-                                    else{
-                                        
-                                            Text("Нет долгов !!!")
-                                                .font(.title)
-                                                .fontWeight(.bold)
-                                                .foregroundColor(Color("purple"))
-                                                .padding()
-                                        
-                                    }
                                     
                                 }
                             })
